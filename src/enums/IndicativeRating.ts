@@ -7,4 +7,5 @@ enum IndicativeRating {
   A18 = 18,
 }
 
+
 export default IndicativeRating

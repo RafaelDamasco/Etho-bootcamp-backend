@@ -7,7 +7,11 @@ interface Movie {
 
   ratings: number[];
 
-  indicativeRating: IndicativeRating;
+  duration: number;
+
+  directedBy: string;
+
+  //indicativeRating: IndicativeRating;
 }
 
 export default Movie
