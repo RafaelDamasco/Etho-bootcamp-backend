@@ -8,13 +8,13 @@ interface MovieFromApiDTO {
   duration: number,
 }
 
-function loadMovies(moviesFromApi: MovieFromApiDTO[]): Partial<Movie>[] {
-  
-  return moviesFromApi.map((movie) => ({
+function loadMovies(data: MovieFromApiDTO[]): Movie[] {
+  return data.map((movie: MovieFromApiDTO) => ({
     id: movie.id,
     name: movie.title,
     directedBy: movie.directed_by,
     duration: movie.duration,
+    ratings: []
   }))
 }
 
